@@ -11,8 +11,17 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+::-webkit-scrollbar {
+  width: 13px;
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#21212100, #73ff6e);
+}
+
 h1 {font-size:100px;}
-h2 {font-size:36px;}
+h2 {font-size:34px;}
 h3 {font-size:30px;}
 h4 {font-size:24px;}
 h5 {font-size:17px;}
@@ -43,6 +52,9 @@ h5 {
 }
 .btn:hover {
   background: #06be00;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-color: transparent;
 }
 
@@ -192,7 +204,7 @@ header span {
   height: 4px;
 }
 .skills .progress .progress-bar-primary {
-  background: #06be00;
+  background: linear-gradient(to right, #06be00, #f2f2f2);
 }
 .skills strong {
   display: inline-block;
@@ -222,11 +234,14 @@ header span {
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
   min-height: 365px;
 }
+.privacy .links {
+  color: #06be00;
+}
 .privacy ul {
-  padding: 10px;
+  padding: 0px;
 }
 .privacy ul li {
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 }
 
 /* contact section */
@@ -238,6 +253,8 @@ header span {
 .contact .fa {
   padding-right: 20px;
   color: #06be00;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .contact .links {
   color: #06be00;
